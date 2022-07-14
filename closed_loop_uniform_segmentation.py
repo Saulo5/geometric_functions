@@ -1,7 +1,5 @@
 import math
 import numpy as np
-import open3d as o3d
-from scipy.spatial import ConvexHull
 import scipy.interpolate as si
 
 # Function that divide a closed line segment defined by several points into uniform segments
@@ -15,7 +13,7 @@ import scipy.interpolate as si
 # new_edges: the new st of segments that conform the line
 
 
-def line_uniform_segmetation(vertices, edges, num_points):
+def closed_line_uniform_segmetation(vertices, edges, num_points):
     new_vertices = np.empty([0, 3])
     new_edges = np.empty([0, 2], int)
     idx1 = 0
