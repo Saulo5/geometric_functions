@@ -1,11 +1,15 @@
+import math
+import numpy as np
 
+# Function that divide a open line segment defined by several points into uniform segments
+# INPUTS:
+# vertices: the vertices or points that form the line
+# Sampling_distance: distance between the spected new points by following the curve
 
+# OUTPUTS:
+# new_points: the points that represent the new line
 
-
-
-
-
-def line_uniform_segmetation(vertices, sampling_distance):
+def open_line_uniform_segmetation(vertices, sampling_distance):
     new_vertices = np.empty([0, 3])
     new_edges = np.empty([0, 2], int)
     idx1 = 0
