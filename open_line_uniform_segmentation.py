@@ -53,4 +53,4 @@ def open_line_uniform_segmetation(vertices, sampling_distance):
             new_edges = np.vstack([new_edges, [j, j + 1]])
     idx1 = idx2
 
-    return new_vertices
+    return new_vertices, new_edges
